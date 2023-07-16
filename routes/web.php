@@ -47,7 +47,7 @@ Route::prefix('admin')->middleware(['role:Admin', 'auth'])->group(function () {
     Route::get('/project/{slug}', [AdminProjectController::class,'project_slug']);
 
     //за много проекти обвързани с даден slug категория
-    Route::get('/categories/{slug}', [AdminProjectController::class,'category_projects_slug']);
+    Route::get('/categories/{slug}/projects', [AdminProjectController::class,'category_projects_slug']);
 
     Route::resource('categories',AdminCategoryController::class);
 });
