@@ -166,6 +166,12 @@
                 <li class="{{$module == 'users' ? 'active' : ''}} @allowedPages('users')">
                     <a href="{{ route('users.index') }}"><i class="fa fa-fw fa-edit"></i> {{ admin_trans('menu.users') }}</a>
                 </li>
+                <li class="{{$module == 'categories' ? 'active' : ''}} @allowedPages('categories')">
+                    <a href="{{ route('categories.index') }}"><i class="fa fa-fw fa-edit"></i> Categories</a>
+                </li>
+                <li class="{{$module == 'projects' ? 'active' : ''}} @allowedPages('users')">
+                    <a href="{{ route('projects.index') }}"><i class="fa fa-fw fa-edit"></i> {{ admin_trans('menu.projects') }}</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

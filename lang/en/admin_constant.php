@@ -15,10 +15,28 @@ return [
         'pages' => 'Pages',
         'news' => 'News',
         'users' => 'Users',
+        'categories'=>'Categories',
+        'projects'=>'Projects'
     ],
     'message_saved' => 'Item saved successfully',
     "news" => [
         'status' => 'Status',
+        'heading_title_form'  => 'News',
+        'heading_title_index'  => 'News',
+        'title'  => 'Title',
+        'subtitle'  => 'Subtitle',
+        'description'  => 'Description',
+        'date_published' => 'Date published',
+        'gallery' => 'Gallery'
+    ],
+    "categories" => [
+        'status' => 'Status',
+        'heading_title_form'  => 'News',
+        'heading_title_index'  => 'News',
+        'title'  => 'Title',
+        'subtitle'  => 'Subtitle',
+    ],
+    "products" => [
         'heading_title_form'  => 'News',
         'heading_title_index'  => 'News',
         'title'  => 'Title',
@@ -104,5 +122,7 @@ return [
         'page' => 'Page',
         'news' => 'News',
         'users' => 'Users',
+        'categories'=>'Categories',
+        'projects'=>'Projects'
     ]
 ];

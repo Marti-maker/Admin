@@ -14,6 +14,25 @@ return new class extends Migration
         Schema::create('projects_translations', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->unsignedBigInteger('project_id');
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->string('meta_title')->nullable();
+            $table->string("meta_description")->nullable();
+            $table->string('slug');
+            $table->string('locale')->nullable()->index();
+            $table->unique(['project_id','locale']);
+            $table->unique(['slug','locale']);
+
+            $table->foreign('locale')
+                    ->references('locale')
+                    ->on('languages')
+                    ->onDelete('set null');
+
+            $table->foreign('project_id')
+                ->references('id')
+                ->on('projects')
+                ->onDelete('cascade');
         });
     }
 

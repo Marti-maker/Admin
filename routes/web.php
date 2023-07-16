@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Front\PageController as FrontPageController;
 use App\Http\Controllers\Front\NewsController as FrontNewsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\ProjectsController as AdminProjectController;
+use App\Http\Controllers\Admin\CategoriesController as AdminCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +40,11 @@ Route::prefix('admin')->middleware(['role:Admin', 'auth'])->group(function () {
     Route::resource('news', AdminNewsController::class);
 
     Route::resource('users', UserController::class);
+
+    //
+    Route::resource('projects',AdminProjectController::class);
+
+    Route::resource('categories',AdminCategoryController::class);
 });
 
 Route::localization(function () {

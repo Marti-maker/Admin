@@ -30,7 +30,7 @@ return new class extends Migration
 
             $table->foreign('news_id')
                 ->references('id')
-                ->on('pages')
+                ->on('news')
                 ->onDelete('cascade');
         });
     }
