@@ -1,13 +1,19 @@
 @extends('admin.layouts.default')
 
-@section('title') {{ $title }} @stop
+@section('title')
+    {{ $title }}
+@stop
 @section('content')
     <div id="page-wrapper">
         <nav class="navbar navbar-default navbar-fixed">
 
             <div class="pull-right">
-                <a class="btn btn-success" href="#" onclick="unsaved = false; unload = false; $('#redirect').val('back'); $('#data_form').submit(); return false;" role="button">{{ admin_trans('save_btn') }}</a>
-                <a class="btn btn-warning" href="#" onclick="unsaved = false; unload = false; $('#data_form').submit(); return false;" role="button">{{ admin_trans('save_close_btn') }}</a>
+                <a class="btn btn-success" href="#"
+                   onclick="unsaved = false; unload = false; $('#redirect').val('back'); $('#data_form').submit(); return false;"
+                   role="button">{{ admin_trans('save_btn') }}</a>
+                <a class="btn btn-warning" href="#"
+                   onclick="unsaved = false; unload = false; $('#data_form').submit(); return false;"
+                   role="button">{{ admin_trans('save_close_btn') }}</a>
                 <a class="btn btn-danger" href="{{ $listUrl }}" role="button">{{ admin_trans('close_btn') }}</a>
             </div>
         </nav>
@@ -48,7 +54,8 @@
                         <ul id="language-tabs" class="nav nav-tabs" role="tablist">
                             @foreach($languages as $key=>$language)
                                 <li role="presentation" @if($key == 0) class="active" @endif>
-                                    <a href="#{{$language->code}}" aria-controls="home" role="tab" data-toggle="tab">{{$language->name}}</a>
+                                    <a href="#{{$language->code}}" aria-controls="home" role="tab"
+                                       data-toggle="tab">{{$language->name}}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -56,7 +63,8 @@
 
                     <div class="tab-content">
                         @foreach($languages as $key=>$language)
-                            <div role="tabpanel" class="tab-pane @if($key == 0) active @endif " id="{{$language->code}}">
+                            <div role="tabpanel" class="tab-pane @if($key == 0) active @endif "
+                                 id="{{$language->code}}">
                                 <div class="form-group">
                                     {!! Form::label('title'.$language->id,  admin_trans('categories.title')  . '(' . $language->name . ')') !!}
                                     {!! Form::text($language->locale.'[title]',  $entity->translate($language->locale)->title ?? '', ['placeholder' =>  admin_trans('categories.title') , 'class' => 'form-control', 'id' => 'title-'.$language->id]) !!}
@@ -82,12 +90,12 @@
         </div>
     </div>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             MOD.checkbox();
 
             $('#datetimepicker').datetimepicker({
                 //'format' : 'yyyy-mm-dd hh:ii',
-                'defaultDate' : new Date(),
+                'defaultDate': new Date(),
                 'format': 'YYYY-MM-DD'
             });
         });

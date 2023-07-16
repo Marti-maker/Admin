@@ -9,7 +9,6 @@ use App\Http\Controllers\Front\NewsController as FrontNewsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\ProjectsController as AdminProjectController;
 use App\Http\Controllers\Admin\CategoriesController as AdminCategoryController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,6 +42,12 @@ Route::prefix('admin')->middleware(['role:Admin', 'auth'])->group(function () {
 
     //
     Route::resource('projects',AdminProjectController::class);
+
+    //за еденичен проект
+    Route::get('/project/{slug}', [AdminProjectController::class,'project_slug']);
+
+    //за много проекти обвързани с даден slug категория
+    Route::get('/categories/{slug}', [AdminProjectController::class,'category_projects_slug']);
 
     Route::resource('categories',AdminCategoryController::class);
 });

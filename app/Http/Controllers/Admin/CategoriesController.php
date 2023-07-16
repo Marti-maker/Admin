@@ -10,35 +10,35 @@ use App\Repositories\Repository;
 use App\Traits\AdminPanel;
 
 
-
-
 class CategoriesController extends Controller
 {
 
-    use AdminPanel , StatusablePanel;
+    use AdminPanel, StatusablePanel;
+
     private Repository $repository;
 
-    public function __construct(Categories $categories){
-        $this->repository=new Repository($categories);
+    public function __construct(Categories $categories)
+    {
+        $this->repository = new Repository($categories);
     }
+
     public function index()
     {
-        $entities=$this->repository->index();
-        return $this->returnListView('categories.index',compact('entities'));
+        $entities = $this->repository->index();
+        return $this->returnListView('categories.index', compact('entities'));
     }
 
     public function create(Categories $entity)
     {
-        return $this->returnFormView('categories.form',$entity);
+        return $this->returnFormView('categories.form', $entity);
     }
 
     public function store(CategoriesRequest $request)
     {
 
-        $entity=$this->repository->create($request->all());
+        $entity = $this->repository->create($request->all());
         return $this->redirectBack($request, $entity);
     }
-
 
 
     public function edit($id)

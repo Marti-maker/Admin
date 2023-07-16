@@ -1,13 +1,19 @@
 @extends('admin.layouts.default')
 
-@section('title') {{ $title }} @stop
+@section('title')
+    {{ $title }}
+@stop
 @section('content')
     <div id="page-wrapper">
         <nav class="navbar navbar-default navbar-fixed">
 
             <div class="pull-right">
-                <a class="btn btn-success" href="#" onclick="unsaved = false; unload = false; $('#redirect').val('back'); $('#data_form').submit(); return false;" role="button">{{ admin_trans('save_btn') }}</a>
-                <a class="btn btn-warning" href="#" onclick="unsaved = false; unload = false; $('#data_form').submit(); return false;" role="button">{{ admin_trans('save_close_btn') }}</a>
+                <a class="btn btn-success" href="#"
+                   onclick="unsaved = false; unload = false; $('#redirect').val('back'); $('#data_form').submit(); return false;"
+                   role="button">{{ admin_trans('save_btn') }}</a>
+                <a class="btn btn-warning" href="#"
+                   onclick="unsaved = false; unload = false; $('#data_form').submit(); return false;"
+                   role="button">{{ admin_trans('save_close_btn') }}</a>
                 <a class="btn btn-danger" href="{{ $listUrl }}" role="button">{{ admin_trans('close_btn') }}</a>
             </div>
         </nav>
@@ -39,7 +45,7 @@
                 </div>
             @endif
             <h1><i class='fa fa-globe'></i> {{ $title }}</h1>
-            {!! Form::open($formData) !!}
+            {!! Form::open(array_merge($formData, ['files' => true])) !!}
             {!! Form::hidden('redirect', '', ['id'=>'redirect']) !!}
             @method($formData['method'])
             <div class="row">
@@ -48,7 +54,8 @@
                         <ul id="language-tabs" class="nav nav-tabs" role="tablist">
                             @foreach($languages as $key=>$language)
                                 <li role="presentation" @if($key == 0) class="active" @endif>
-                                    <a href="#{{$language->code}}" aria-controls="home" role="tab" data-toggle="tab">{{$language->name}}</a>
+                                    <a href="#{{$language->code}}" aria-controls="home" role="tab"
+                                       data-toggle="tab">{{$language->name}}</a>
                                 </li>
                             @endforeach
                         </ul>
@@ -56,7 +63,8 @@
 
                     <div class="tab-content">
                         @foreach($languages as $key=>$language)
-                            <div role="tabpanel" class="tab-pane @if($key == 0) active @endif " id="{{$language->code}}">
+                            <div role="tabpanel" class="tab-pane @if($key == 0) active @endif "
+                                 id="{{$language->code}}">
                                 <div class="form-group">
                                     {!! Form::label('title'.$language->id,  admin_trans('news.title')  . '(' . $language->name . ')') !!}
                                     {!! Form::text($language->locale.'[title]',  $entity->translate($language->locale)->title ?? '', ['placeholder' =>  admin_trans('news.title') , 'class' => 'form-control', 'id' => 'title-'.$language->id]) !!}
@@ -71,31 +79,69 @@
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">{{ admin_trans('option_panel') }}</div>
-                        <div class="panel-body">
-                            <div class='form-group'>
-                                {!! Form::label('status',  admin_trans('news.status'))  !!}
-                                {!! Form::select('status',array('0'=> admin_trans('disable') ,'1'=> admin_trans('enable')  ),$entity->status, ['class' => 'form-control']) !!}
+                    <div class='panel panel-default'>
+                        @if(isset($categories) && count($categories) > 0)
+                            <div id="container" class="panel-heading">
+                                {{ admin_trans('products.categories') }}
+                                <select name="categories[]" class="category-select">
+                                    @foreach($categories as $key => $value)
+                                        <option value="{{ $key }}">{{ $value }}</option>
+                                    @endforeach
+                                </select>
+                                <button id="add-select-btn" type="button" onclick="addNewSelect()">Add Select</button>
                             </div>
-                        </div>
+                        @endif
                     </div>
+                    <div class="form-group">
+                        <label for="cover">Cover</label>
+                        {!! Form::file('cover', ['class' => 'form-control', 'accept' => 'image/*']) !!}
+                    </div>
+                    {!! Form::submit('Upload Photo', ['class' => 'btn btn-primary']) !!}
 
-                    @include('admin.general.cover')
+
                 </div>
             </div>
             {!!  Form::close() !!}
         </div>
     </div>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             MOD.checkbox();
 
             $('#datetimepicker').datetimepicker({
                 //'format' : 'yyyy-mm-dd hh:ii',
-                'defaultDate' : new Date(),
+                'defaultDate': new Date(),
                 'format': 'YYYY-MM-DD'
             });
         });
     </script>
+    <script>
+        var selectedOptions = [];
+
+        function addNewSelect() {
+            var container = document.getElementById('container');
+            var select = container.querySelector('.category-select');
+            var selectedOption = select.options[select.selectedIndex];
+
+            if (selectedOption) {
+                selectedOptions.push(selectedOption.value);
+
+                var allSelects = document.querySelectorAll('.category-select');
+                for (var i = 0; i < allSelects.length; i++) {
+                    var options = allSelects[i].options;
+                    for (var j = 0; j < options.length; j++) {
+                        if (selectedOptions.includes(options[j].value)) {
+                            options[j].disabled = true;
+                        }
+                    }
+                }
+                let newSelect = document.createElement('select');
+                newSelect.className = 'category-select';
+                newSelect.name = 'categories[]';
+                newSelect.innerHTML = select.innerHTML;
+                container.appendChild(newSelect);
+            }
+        }
+    </script>
+
 @stop

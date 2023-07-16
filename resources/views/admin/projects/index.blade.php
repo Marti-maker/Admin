@@ -1,5 +1,7 @@
 @extends('admin.layouts.default')
-@section('title'){{$title}} @stop
+@section('title')
+    {{$title}}
+@stop
 
 @section('content')
     <div class="container-fluid">
@@ -38,7 +40,6 @@
                             <div class="dd-content static cf">
                                 <div class="list-header" style="width: 50%;">
 
-
                                     <div class="">
                                         <a href="{{ admin_route('projects.edit', [$entity->id]) }}">
                                             <div class="">{{ $entity->title }}</div>
@@ -48,16 +49,14 @@
                                 </div>
                                 <div class="list-btn-group cf" style="width: 50%;">
                                     <div class="list-btn">
-                                        <a class="glyphicon glyphicon-trash"   onclick="MOD.delete('{{$entity->id}}','{{ $url }}');" role="button" title="{{ admin_trans('delete') }}"></a>
-
+                                        <a class="glyphicon glyphicon-trash"
+                                           onclick="MOD.delete('{{$entity->id}}','{{ $url }}');" role="button"
+                                           title="{{ admin_trans('delete') }}"></a>
                                     </div>
                                     <div class="list-btn">
-                                        <a class="glyphicon glyphicon-edit"  href="{{ admin_route('projects.edit', [$entity->id]) }}" role="button" title="{{ admin_trans('edit') }}"></a>
-                                    </div>
-                                    <div class="list-btn">
-                                        <div data-id="{{$entity->id}}" onclick="MOD.visible(this, '{{ $url }}')" class="btn-switch @if($entity->status) active @endif" title="{{ admin_trans('publish') }}">
-                                            <div class="btn-toggle"></div>
-                                        </div>
+                                        <a class="glyphicon glyphicon-edit"
+                                           href="{{ admin_route('projects.edit', [$entity->id]) }}" role="button"
+                                           title="{{ admin_trans('edit') }}"></a>
                                     </div>
                                 </div>
                             </div>
@@ -70,6 +69,5 @@
         <script>
             var token = $('[name="_token"]').val();
         </script>
-
 
 @endsection

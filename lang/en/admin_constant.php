@@ -31,19 +31,19 @@ return [
     ],
     "categories" => [
         'status' => 'Status',
-        'heading_title_form'  => 'News',
-        'heading_title_index'  => 'News',
+        'heading_title_form'  => 'Categories',
+        'heading_title_index'  => 'Categories',
         'title'  => 'Title',
         'subtitle'  => 'Subtitle',
     ],
     "products" => [
-        'heading_title_form'  => 'News',
-        'heading_title_index'  => 'News',
+        'heading_title_form'  => 'Products',
+        'heading_title_index'  => 'Products',
         'title'  => 'Title',
         'subtitle'  => 'Subtitle',
         'description'  => 'Description',
-        'date_published' => 'Date published',
-        'gallery' => 'Gallery'
+        'gallery' => 'Gallery',
+        'categories'=>'Categories'
     ],
     'page' => [
         'title' => 'Title',

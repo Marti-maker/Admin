@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->tinyInteger('status')->default(0);
-            $table->string('cover')->nullable();
+            $table->text('cover')->nullable();
             $table->timestamps();
         });
     }

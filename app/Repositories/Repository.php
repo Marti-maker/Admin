@@ -55,9 +55,13 @@ class Repository
             ->findBySlug($slug);
     }
 
-    public function create(array $data)
+    public function create(array $data,$file_name=null)
     {
-        return $this->model->create($data);
+        if ($file_name){
+            $data['cover']=$file_name;
+        }
+            return $this->model->create($data);
+
     }
 
     public function find(int $id, $with = [], $where = [])

@@ -7,7 +7,7 @@ use Illuminate\Support\Arr;
 
 class SectionRepository extends Repository
 {
-    public function create(array $data)
+    public function create(array $data, $file_name=null)
     {
         if(!Arr::get($data, 'page_id')) {
             $data['page_id'] = Page::create([])->id;
