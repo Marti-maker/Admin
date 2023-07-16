@@ -1,0 +1,143 @@
+[13-Jul-2015 14:22:18 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:22:18 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:22:18 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[13-Jul-2015 14:22:18 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[13-Jul-2015 14:23:08 Europe/Rome] PHP Warning:  move_uploaded_file(../source/5.jpg): failed to open stream: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/upload.php on line 86
+[13-Jul-2015 14:23:08 Europe/Rome] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phptjm6Ts' to '../source/5.jpg' in /home/w9cngopq/kipo/public_html/filemanager/upload.php on line 86
+[13-Jul-2015 14:23:08 Europe/Rome] PHP Warning:  chmod(): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/upload.php on line 87
+[13-Jul-2015 14:23:23 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:23:23 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:23:23 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[13-Jul-2015 14:23:23 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[13-Jul-2015 14:23:25 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:23:25 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:23:25 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[13-Jul-2015 14:23:25 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[13-Jul-2015 14:26:22 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:26:22 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:26:22 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[13-Jul-2015 14:26:22 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[13-Jul-2015 14:26:28 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:26:28 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:26:28 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[13-Jul-2015 14:26:28 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[13-Jul-2015 14:26:37 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:26:37 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[13-Jul-2015 14:26:37 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[13-Jul-2015 14:26:37 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[16-Jul-2015 08:53:06 Europe/Rome] PHP Warning:  scandir(../source/): failed to open dir: No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[16-Jul-2015 08:53:06 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 456
+[16-Jul-2015 08:53:06 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 463
+[16-Jul-2015 08:53:06 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/w9cngopq/kipo/public_html/filemanager/dialog.php on line 926
+[02-Oct-2016 17:47:20 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../../images/upload/ice dragon.png is missing or invalid in /home/iui6agub/projects/NAIS/public_html/kipo_admin/filemanager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/iui6agub/projects/NAIS/public_html/kipo_admin/filemanager/include/utils.php(216): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/iui6agub/projects/NAIS/public_html/kipo_admin/filemanager/upload.php(92): create_img('../../images/up...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/iui6agub/projects/NAIS/public_html/kipo_admin/filemanager/include/php_image_magician.php on line 346
+[29-Sep-2017 11:55:34 Europe/Rome] PHP Notice:  Undefined index: RF in /home/gastronomy/public_html/kipo_admin/filemanager/include/utils.php on line 3
+[17-Jul-2020 09:50:07 Europe/Rome] PHP Warning:  scandir(../../images/upload/): failed to open dir: No such file or directory in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 456
+[17-Jul-2020 09:50:07 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 456
+[17-Jul-2020 09:50:07 Europe/Rome] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 457
+[17-Jul-2020 09:50:07 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 463
+[17-Jul-2020 09:50:07 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 926
+[17-Jul-2020 09:50:43 Europe/Rome] PHP Warning:  scandir(../../images/upload/): failed to open dir: No such file or directory in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 456
+[17-Jul-2020 09:50:43 Europe/Rome] PHP Warning:  scandir(): (errno 2): No such file or directory in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 456
+[17-Jul-2020 09:50:43 Europe/Rome] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 457
+[17-Jul-2020 09:50:43 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 463
+[17-Jul-2020 09:50:43 Europe/Rome] PHP Warning:  Invalid argument supplied for foreach() in /home/kipobgoj/api.netix/public/file_manager/dialog.php on line 926
+[17-Aug-2020 09:31:13 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/AV Distribution (1).svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:15 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/Netix-BG-1.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:15 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/NetIx-Thess-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:16 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/Netix-Cloud-1.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:16 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/NetIX-Transit-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:16 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/On-Net-4.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:16 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/Remote-peering-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:16 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/Tunnelling-over-Internet-1.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:17 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/VLAN-over-IXP-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:17 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/AV-Distribution-1.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:17 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/AV-Feed-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:17 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/Blackholing-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:18 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/GIX-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:18 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/IXaaS-2.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[20-Aug-2020 10:47:18 Europe/Rome] PHP Fatal error:  Uncaught Exception: file ../images/upload/services/NetIX-Athens-1.svg is missing or invalid in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php:346
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/include/utils.php(221): imageLib->resizeImage(122, 91, 'crop')
+#1 /home/kipobgoj/api.netix/public/file_manager/upload.php(92): create_img('../images/uploa...', '../images/thumb...', 122, 91)
+#2 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/php_image_magician.php on line 346
+[25-Sep-2020 15:55:09 Europe/Rome] PHP Fatal error:  Uncaught Error: Class 'Response' not found in /home/kipobgoj/api.netix/public/file_manager/include/utils.php:25
+Stack trace:
+#0 /home/kipobgoj/api.netix/public/file_manager/ajax_calls.php(564): response('<iframe id="vie...')
+#1 {main}
+  thrown in /home/kipobgoj/api.netix/public/file_manager/include/utils.php on line 25

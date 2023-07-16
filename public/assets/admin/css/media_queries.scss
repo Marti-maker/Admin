@@ -1,0 +1,30 @@
+@media (max-width: 480px) {
+	
+	.list-header {
+	    float: none;
+	    width: 100%;
+	}
+	.list-btn-group {
+	    float: none;
+	    width: 100%;
+
+	    .list-btn {
+	        float: left;
+	        width: 20%;
+	    }
+	}
+	.col-xs-6, .col-xs-4 {
+		width: 100%!important;
+	}
+}
+@media (max-width: 768px) { 
+	
+	.navbar-fixed {
+	    top: 101px;
+		padding: 5px 5px 5px 10px;
+
+	    .btn {
+	        margin: 0 5px;
+	    }
+	}
+}
