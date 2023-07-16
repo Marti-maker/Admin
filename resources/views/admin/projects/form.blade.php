@@ -96,7 +96,6 @@
                         <label for="cover">Cover</label>
                         {!! Form::file('cover', ['class' => 'form-control', 'accept' => 'image/*']) !!}
                     </div>
-                    {!! Form::submit('Upload Photo', ['class' => 'btn btn-primary']) !!}
 
 
                 </div>
